@@ -11,4 +11,4 @@ services:
         value: production
       - key: GOOGLE_APPLICATION_CREDENTIALS
         value: /path/to/graphology-ibm-firebase-adminsdk-eod85-4a2d7a2ea4.json
-    pythonVersion: 3.10.12  # Specify a compatible Python version
+    pythonVersion: 3.10.12  # Ensure this is specified
