@@ -1,6 +1,6 @@
 Flask==2.0.2
 opencv-python-headless==4.5.3.56
-numpy==1.21.2
+numpy==1.21.6  # Adjusted to a version with pre-built wheels
 tensorflow==2.6.0
 firebase-admin==5.0.2
 requests==2.26.0
