@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: content-validation
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /path/to/graphology-ibm-firebase-adminsdk-eod85-4a2d7a2ea4.json
+    pythonVersion: 3.11.9
