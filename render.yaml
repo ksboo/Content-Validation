@@ -4,7 +4,7 @@ services:
     env: python
     region: oregon
     plan: free
-    buildCommand: "pip install --upgrade pip && pip install -r requirements.txt"
+    buildCommand: "pip install --upgrade pip && apt-get update && apt-get install -y build-essential && pip install -r requirements.txt"
     startCommand: "python app.py"
     envVars:
       - key: FLASK_ENV
@@ -12,4 +12,3 @@ services:
       - key: GOOGLE_APPLICATION_CREDENTIALS
         value: /path/to/graphology-ibm-firebase-adminsdk-eod85-4a2d7a2ea4.json
     pythonVersion: 3.10.12  # Specify a compatible Python version
-
